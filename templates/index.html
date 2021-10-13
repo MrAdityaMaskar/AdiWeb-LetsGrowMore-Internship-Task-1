@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+   <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <style>
+      body {
+  background: url("{% static 'img/img4.jpg' %}") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+   }
+    </style>
+</head>
+
+    <body >
+
+    <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">AdiWeb</a>
+              <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button" >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item ">
+                    <a aria-current="page" class="nav-link active" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarDropdown" role="button">
+                      About Us
+                    </a>
+                    <ul aria-labelledby="navbarDropdown" class="dropdown-menu">
+                      <li><a class="dropdown-item" href="https://www.instagram.com/aditya.maskar/">Instagram</a></li>
+                      <li><a class="dropdown-item" href="https://github.com/Aditya01092001">GitHub</a></li>
+                      <li><a class="dropdown-item" href="https://www.facebook.com/aditya.maskar.92">Facebook</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="https://twitter.com/aditya_maskar">Twitter</a></li>
+                      <li><a class="dropdown-item" href="https://www.linkedin.com/in/aditya-maskar-11318819a/?originalSubdomain=in">Linkdin</a></li>
+                    </ul>
+                  </li>
+                    <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="#pricing">Pricing</a>
+                  </li>
+                    <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="#blog">Blog</a>
+                  </li>
+                    <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="#team">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="#contact">Contact</a>
+                  </li>
+                     <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="/admin">Admin</a>
+                  </li>
+
+                    </li>
+
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          
+
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="padding-top: 45px">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="{% static 'img\B.jpg' %}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 style="color:black;">If there is will there is a Way</h5>
+                      <p style="color:black;">If you have strong desire to achieve something you'll get it.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'img\A.jpg' %}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color:black;"><B>Peace is the KEY</B></h5>
+                        <p style="color:black;"><B>Peace is most important thing while achieving success.</B></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'img\C.jpg' %}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 style="color:black;">Bug is the Feature</h5>
+                      <p style="color:black;">Convert bug in a feature and invent new things.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+      <section id="projects"></section>
+        <h2 style="text-align : center; padding-top: 25px; color: black"><B>Projects</B></h2>
+<div class="projects">
+      <div class="card-group" style="color:black; text-align:center">
+      <div class="card">
+	
+        <img class="card-img-top" src="{% static 'img\pro0.png' %}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Django Framework</h5>
+          <p class="card-text">Django Framework is awesome, it gives inbuilt Django Admin Panal </p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="{% static 'img/This-Pro.png' %}" alt="Card image cap" >
+        <div class="card-body">
+          <h5 class="card-title">AdiWeb</h5>
+          <p class="card-text">Single Page Application is  created using Django Framework</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="{% static 'img\AResume.png' %}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Resume</h5>
+          <p class="card-text">Resume Website is created using Django Framework</p>
+        </div>
+      </div>
+    </div>
+</div>
+    <br>
+
+
+        <section id="pricing"></section>
+             <h2 style="text-align : center; padding-top: 25px; color: black"><B>Pricing Table</B></h2>
+        <div class="pricing-table">
+            <div class="pricing-card">
+              <h3 class="pricing-card-header">Basic</h3>
+              <div class="price">1000<sup>&#8377</sup></div>
+              <ul>
+                <li>Basic Site</li>
+                <li>Responsive with JS CSS</li>
+                <li>Single Page Application</li>
+                <li>Well Server Response</li>
+              </ul>
+              <a href="#contact" class="order-btn">Order Now</a>
+            </div>
+
+            <div class="pricing-card">
+              <h3 class="pricing-card-header">Standard</h3>
+              <div class="price">3000<sup>&#8377</sup></div>
+              <ul>
+                <li>Standard Application </li>
+                  <li>Standard Site With Web-Hosting</li>
+                  <li>User & Admin included</li>
+                  <li>Intermediate Server Response </li>
+              </ul>
+              <a href="#contact" class="order-btn">Order Now</a>
+            </div>
+
+            <div class="pricing-card">
+              <h3 class="pricing-card-header">Professional</h3>
+              <div class="price">5000<sup>&#8377</sup></div>
+              <ul>
+                <li>Professional MultiPage App</li>
+                <li>Extreme Security</li>
+                <li>User & Admin included</li>
+                <li>High Server Response</li>
+              </ul>
+              <a href="#contact" class="order-btn">Order Now</a>
+            </div>
+
+        </div>
+
+
+
+
+
+        <section id="team"></section>
+             <h2 style="text-align : center; padding-top: 25px; color:black;"><B>Team</B></h2>
+      <div class="container mt-4 mb-4 p-3 d-flex justify-content-center"  style="color:black;">
+          <div class="crd">
+        <div class="card p-4">
+            <div class=" image d-flex flex-column justify-content-center align-items-center"> <img src="{% static 'img/Profile.png' %}" height="100" width="100" /></button> <span class="name mt-3"><strong>Mr. Aditya Maskar</strong></span> <span class="idd">@aditya.maskar</span>
+
+
+                <div class="text mt-3" > <span> <strong>Web Developer Intern at LetsGrowMore</strong> <br><br> Django Full Stack Web Development </span> </div>
+
+            </div>
+        </div>
+          </div>
+      </div>
+
+         <section id="blog"></section>
+        <h2 style="text-align : center; padding-top: 25px; color: black"><B>Blog</B></h2>
+
+      <div class="card-group" style="color:black; text-align:center">
+      <div class="card">
+
+        <img class="card-img-top" src="{% static 'img\py310.jpg' %}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Python 3.10 is out</h5>
+            <p><em>4th October 2021</em></p>
+          <p class="card-text">Python 3.10 has been released as of the 4th October 2021! You can download the latest version here.
+              We'll cover some of the most interesting additions to Python — structural pattern matching,
+              parenthesized context managers, more typing, and the new and improved error messages. </p>
+        </div>
+          <div class="btn-area">
+                      <a class="btn btn-primary" href="#contact" role="button" >Read More</a>
+          </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="{% static 'img/djangular.png' %}" alt="Card image cap" >
+        <div class="card-body">
+          <h5 class="card-title">Django+Angular</h5>
+            <p><em>10th October 2021</em></p>
+          <p class="card-text">You know how to use Django to make web apps and also,
+              you know how to build beautiful frontends using Angular but you were probably wondering how to integrate
+              them with each other to build a single web app that has benefits of both?</p>
+        </div>
+          <div class="btn-area">
+                      <a class="btn btn-primary" href="#contact" role="button">Read More</a>
+          </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="{% static 'img\djfl.png' %}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Flask vs Django</h5>
+            <p><em>10th October 2021</em></p>
+          <p class="card-text">Django is a large SQL-based framework while Flask is a much smaller one. They both have
+              great communities and excellent documentation. As of 2020, they both are mature, stable,
+              and together take approximately 80% of Python web applications market share.</p>
+        </div>
+           <div class="btn-area">
+                      <a class="btn btn-primary" href="#contact" role="button">Read More</a>`
+           </div>
+      </div>
+    </div>
+
+
+    {% if success %}
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+      <strong>Success: </strong> Your form has been submitted successfully
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  {% endif %}
+
+        <section id="contact"></section>
+        <div class="contact" style="color:black; padding-top:30px; padding-left:20%;padding-right:20%">
+            <h2 style="text-align : center; padding-top: 25px;"><B>Contact</B></h2>
+            <form action="" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="name"><B>Name:</B></label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><B>Email:</B></label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject"><B>Subject:</B></label>
+                    <input type="text" class="form-control" id="subject" placeholder="Enter Subject" name="subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Textarea"><B>Message:</B></label>
+                    <textarea class="form-control" placeholder="Leave a Message here: " id="Textarea" name="message" required></textarea>
+                </div>
+
+                <div class="col-12" style="margin-top: 10px">
+                    <button type="Submit" class="btn btn-success" >Submit</button>
+                </div>
+
+        </form>
+        </div>
+        <p align="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37061.57661965049!2d74.99735532550447!3d17.87934661826232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc474f8ad0e2bff%3A0xc395fd4a65ca76e8!2sAkluj%2C%20Maharashtra!5e1!3m2!1sen!2sin!4v1633460821915!5m2!1sen!2sin" width="500" height="450"   style="border:0;" ></iframe></p>
+
+        <div class="mastfoot" style="margin-top:50px; color:black;">
+    <div  id="footer" style="width:100%;">
+            <p align="center">Copyright &#169 2021 AdiWeb.com | All rights reserved.</p>
+        </div>
+    </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+
+
+    </body>
+
+</html>
